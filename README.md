@@ -7,7 +7,9 @@
 ## 脚本
 
 * 启动脚本  
-  `wget --no-check-certificate -O gost.sh https://raw.githubusercontent.com/KANIKIG/Multi-EasyGost/master/gost.sh && chmod +x gost.sh && ./gost.sh`  
+```
+wget --no-check-certificate -O gost.sh https://raw.githubusercontent.com/Joseph-ink/Multi-EasyGost/master/gost.sh && chmod +x gost.sh && ./gost.sh
+```
 * 再次运行本脚本只需要输入`./gost.sh`回车即可  
 
 > 注：此分支追随最新gost v2.11.4，后续将继续保持更新

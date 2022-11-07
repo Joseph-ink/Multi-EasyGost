@@ -1,0 +1,23 @@
+services:
+- name: service-0
+  addr: :8080
+  handler:
+    type: rtcp
+  listener:
+    type: rtcp
+  forwarder:
+    nodes:
+    - name: target-0
+      addr: 192.168.1.1:80
+- name: service-1
+  addr: :10053
+  handler:
+    type: rudp
+  listener:
+    type: rudp
+    metadata:
+      ttl: 5s
+  forwarder:
+    nodes:
+    - name: target-1
+      addr: 192.168.1.1:53
